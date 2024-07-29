@@ -3,50 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30">
   <title>ƎVE</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- 引入 Font Awesome 用于图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+  <!-- 悬浮公告栏 -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-content">
+      <span>欢迎来到ƎVE服务器！请注意查看最新公告。</span>
+    </div>
+    <button class="toggle-announcement" id="toggleAnnouncement" title="收起公告栏"><i class="fas fa-chevron-up"></i></button>
+  </div>
+
+<!-- 收起后弹出的展开按钮 -->
+<button class="expand-announcement" id="expandAnnouncement" title="展开公告栏">
+  <span>展开悬浮公告</span>
+</button>
+
   <header>
-    <h1>ƎVE服务器自助页</h1>
+    <h1 id="head">ƎVE服务器自助页</h1>
   </header>
   <nav>
+    <a href="#GG">公告</a>
     <a href="#JJ">简介</a>
     <a href="#JC">教程</a>
     <a href="#ZZ">赞助</a>
   </nav>
   <div class="container">
     <section id="JJ" class="section">
-    <h2>服务器简介</h2>
-    <p>
-      <strong>名称：</strong>※⊹SuperNova in the starry sky⊹※
-    </p>
-    <p>
-      <strong>别称：</strong>ƎVE
-    </p>
-    <p>
-      <strong>宗旨：</strong>本服务器为公益服，以大家玩的愉快为主
-    </p>
-    <p>
-      <strong>入服申请：</strong>本服是邀请制服务器，并没有对外招人的打算
-    </p>
-  </section>
-  <br />
-  <section id="JC" class="section">
-    <h2>教程</h2>
-    <ul>
+      <h2>服务器简介</h2>
+      <p>
+        <strong>名称: </strong>※⊹SuperNova in the starry sky⊹※
+      </p>
+      <p>
+        <strong>别称: </strong>ƎVE
+      </p>
+      <p>
+        <strong>宗旨: </strong>本服务器为公益服，以大家玩的愉快为主
+      </p>
+      <p>
+        <strong>入服申请: </strong>本服是邀请制服务器，并没有对外招人的打算
+      </p>
+    </section>
+    <br />
+    <section id="GG" class="section">
+      <h2>═ 公告 ══</h2>
+      <p>
+        <strong>置顶: </strong>服务器磁盘容量满后会归档并开启二周目
+        <br />
+        <strong>当前容量</strong>1.05GB/10GB
+      </p>
+    </section>
+    <br />
+    <section id="JC" class="section">
+      <h2>教程</h2>
       <li><a href="JC/服规.html">服规</a></li>
       <li><a href="JC/安卓用户.html">安卓用户</a></li>
       <li><a href="JC/PC用户.html">PC用户</a></li>
       <li><a href="JC/游戏内操作.html">游戏内操作</a></li>
       <!-- 在此处添加更多项目 -->
-    </ul>
-  </section>
-  <br/>
-  <section id="ZZ" class="section">
-    <h2>关于赞助</h2>
-  </section>
-</div>
-<script src="script.js"></script>
+    </section>
+    <br/>
+    <section id="ZZ" class="section">
+      <h2>关于赞助</h2>
+      <p><strong>声明: </strong>并非强行要求，条件允许的话可以考虑赞助<br />
+      目前服务器提供有有三种赞助方式</p>
+      <li><a href="ZZ/推广.html">推广</a></li>
+      <li><a href="ZZ/捐款.html">捐款</a></li>
+      <li><a href="mailto:Albert.Kilonova@gmail.com?subject=吉祥物你好可爱" target="_blank">夸夸</a></li>
+    </section>
+  </div>
+
+  <button id="backToTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
+  
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <hr />
+  
+  <script src="script.js"></script>
+
 </body>
 </html>

@@ -5,34 +5,158 @@ body {
   background-color: #f4f4f4;
   color: #334245;
 }
+
 header {
   background-color: #34d9f2;
   color: white;
   padding: 10px 0;
   text-align: center;
 }
+
 nav {
   display: flex;
   justify-content: center;
   background-color: #333;
 }
+
 nav a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
+
 nav a:hover {
   background-color: #ddd;
   color: black;
 }
+
 .container {
   padding: 20px;
 }
+
 .section {
   margin-bottom: 40px;
 }
+
 h2 {
   border-bottom: 2px solid #3173d9;
   padding-bottom: 10px;
+}
+a:link {
+  text-decoration:none;
+}
+a:visited {
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:none;
+}
+a:active {
+  text-decoration:none;
+}
+
+#backToTop {
+  display: none; /* 默认隐藏 */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 50px; /* 按钮的宽度 */
+  height: 50px; /* 按钮的高度 */
+  background-color: #34d9f2;
+  background-image: linear-gradient(135deg, #34d9f2, #3173d9); /* 添加渐变背景 */
+  color: white;
+  border: none;
+  border-radius: 8px; /* 轻微的圆角 */
+  cursor: pointer;
+  font-size: 24px; /* 字体大小 */
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* 添加过渡效果 */
+}
+
+#backToTop.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(-10px); /* 增加动画效果 */
+}
+
+#backToTop i {
+  display: inline-block;
+  line-height: 50px; /* 与按钮高度一致 */
+}
+
+#backToTop:hover {
+  background-color: #3173d9;
+  background-image: linear-gradient(135deg, #3173d9, #1b4d84); /* 改变悬停时的渐变 */
+}
+
+/* 公告栏样式 */
+.announcement-bar {
+  position: fixed;
+  top: 2px; /* 在页面顶部稍微留出空间 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* 宽度调整为页面的 90% */
+  max-width: 800px; /* 限制最大宽度 */
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+  color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* 圆角 */
+  z-index: 101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 添加透明度过渡 */
+}
+
+.announcement-bar.collapsed {
+  transform: translate(-50%, -100%);
+  opacity: 0; /* 隐藏时降低透明度 */
+}
+
+/* 展开按钮样式 */
+.expand-announcement {
+  display: none; /* 默认隐藏 */
+  position: fixed;
+  top: 2px; /* 在页面顶部稍微留出空间 */
+  left: 85%;
+  transform: translateX(-50%);
+  width: 80px; /* 展开按钮的宽度 */
+  height: 30px; /* 展开按钮的高度 */
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+  color: #333;
+  border: none;
+  border-radius: 4px; /* 圆角 */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 102; /* 确保在公告栏上方 */
+  text-align: center;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.expand-announcement.show {
+  display: block;
+}
+
+.expand-announcement:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 按钮样式 */
+.toggle-announcement {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.toggle-announcement:focus {
+  outline: none;
 }
