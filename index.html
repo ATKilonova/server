@@ -6,7 +6,7 @@
   <meta http-equiv="refresh" content="30">
   <title>ƎVE</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- 引入 Font Awesome 用于图标 -->
+  <!-- 引入 Font Awesome 用于展示图标 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -19,19 +19,19 @@
     <button class="toggle-announcement" id="toggleAnnouncement" title="收起公告栏"><i class="fas fa-chevron-up"></i></button>
   </div>
 
-<!-- 收起后弹出的展开按钮 -->
-<button class="expand-announcement" id="expandAnnouncement" title="展开公告栏">
-  <span>展开悬浮公告</span>
-</button>
+  <!-- 悬浮公告栏收起后弹出的展开按钮 -->
+  <button class="expand-announcement" id="expandAnnouncement" title="展开公告栏">
+    <span>展开悬浮公告</span>
+  </button>
 
   <header>
     <h1 id="head">ƎVE服务器自助页</h1>
   </header>
   <nav>
-    <a href="#GG">公告</a>
-    <a href="#JJ">简介</a>
-    <a href="#JC">教程</a>
-    <a href="#ZZ">赞助</a>
+    <button class="nav-button" data-target="#GG">公告</button>
+    <button class="nav-button" data-target="#JJ">简介</button>
+    <button class="nav-button" data-target="#JC">教程</button>
+    <button class="nav-button" data-target="#ZZ">赞助</button>
   </nav>
   <div class="container">
     <section id="JJ" class="section">
@@ -57,33 +57,32 @@
         <br />
         <strong>当前容量</strong>1.5GB/10GB
       </p>
-      <!-- 新增的进度条元素 -->
+      <!-- 进度条 -->
       <progress id="diskProgress" value="1.5" max="10"></progress>
       <span id="diskUsageText">0.0%</span>
     </section>
     <br />
-    <section id="JC" class="section">
-      <h2>教程</h2>
-      <li><a href="JC/服规.html">服规</a></li>
-      <li><a href="JC/安卓用户.html">安卓用户</a></li>
-      <li><a href="JC/PC用户.html">PC用户</a></li>
-      <li><a href="JC/游戏内操作.html">游戏内操作</a></li>
-      <!-- 在此处添加更多项目 -->
-    </section>
-    <br/>
-    <section id="ZZ" class="section">
-      <h2>关于赞助</h2>
-      <p><strong>声明: </strong>并非强行要求，条件允许的话可以考虑赞助<br />
-      目前服务器提供有有三种赞助方式</p>
-      <li><a href="ZZ/推广.html">推广</a></li>
-      <li><a href="ZZ/捐款.html">捐款</a></li>
-      <li><a href="mailto:Albert.Kilonova@gmail.com?subject=吉祥物你好可爱" target="_blank">夸夸</a></li>
-    </section>
+  <section id="JC" class="section">
+  <h2>教程</h2>
+  <button class="tutorial-button" onclick="window.location.href='JC/服规.html'">服规</button>
+  <button class="tutorial-button" onclick="window.location.href='JC/安卓用户.html'">安卓用户</button>
+  <button class="tutorial-button" onclick="window.location.href='JC/PC用户.html'">PC用户</button>
+  <button class="tutorial-button" onclick="window.location.href='JC/游戏内操作.html'">游戏内操作</button>
+  </section>
+  <br/>
+  <section id="ZZ" class="section">
+  <h2>关于赞助</h2>
+  <p><strong>声明: </strong>并非强行要求，条件允许的话可以考虑赞助<br />
+  目前服务器提供有有三种赞助方式</p>
+  <button class="sponsor-button" onclick="window.location.href='ZZ/推广.html'">推广</button>
+  <button class="sponsor-button" onclick="window.location.href='ZZ/捐款.html'">捐款</button>
+  <button class="sponsor-button" onclick="window.location.href='mailto:Albert.Kilonova@gmail.com?subject=吉祥物你好可爱'">夸夸</button>
+  </section>
   </div>
-
+  
   <button id="backToTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
   
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   <hr />
   
   <script src="script.js"></script>
