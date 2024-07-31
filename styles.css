@@ -247,3 +247,16 @@ progress::-moz-progress-bar {
   top: 100%; /* 悬停时流星的终点 */
   left: 100%;
 }
+
+/* 嵌入iframe的div样式 */
+.embedded-frame {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(135deg, #0d47a1, #42a5f5); /* 渐变色边框 */
+  border-radius: 4px; /* 增加圆角效果 */
+  padding: 10px;
+  margin: 20px 0; /* 保持与页面其他内容的间距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影以增强立体感 */
+  background-color: rgba(255, 255, 255, 0.05); /* 轻微背景色以与页面融合 */
+}

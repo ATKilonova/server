@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Back to top button functionality
   window.addEventListener("scroll", function() {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 1) {
       backToTopButton.classList.add("show");
     }
     else {
